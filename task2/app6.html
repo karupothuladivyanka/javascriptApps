@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>perform (a+b)^2</title>
+</head>
+<body>
+    <script>
+
+        //with parameters and with return value
+        function absquare(a,b)
+        {
+            var result
+            result=(a*a)+(b*b)+(2*(a*b))
+            return result
+        }
+        var r1=absquare(2,3)
+        alert(r1)
+
+        //without parameters and with return value
+        function absquare2()
+        {
+            var a,b,result
+            a=3
+            b=6
+            result=(a*a)+(b*b)+(2*(a*b))
+            return result
+        }
+        var r2=absquare2()
+        alert(r2)
+
+        
+        //with parameters and without return value
+        function absquare3(a,b)
+        {
+            var result
+            result=(a*a)+(b*b)+(2*(a*b))
+            alert(result)
+        }
+        absquare3(4,4)
+
+        //without parameters and without return value
+        function absquare4()
+        {
+            var a,b,result
+            a=4
+            b=2
+            result=(a*a)+(b*b)+(2*(a*b))
+            alert(result)
+        }
+        absquare4()
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>areaofcircle</title>
+</head>
+<body>
+    <script>
+
+        //with parameters and with return value
+        function areaofcircle(radius)
+        {
+            var area
+            const MathPI=3.1415
+            area=Math.PI*radius*radius
+            return area
+        }
+        var r1=areaofcircle(5)
+        alert(r1)
+
+        //without parameters and with return value
+        function areaofcircle2()
+        {
+            var area
+            var radius=2
+            const MathPI=3.1415
+            area=Math.PI*radius*radius
+            return area
+        }
+        var r2=areaofcircle2()
+        alert(r2)
+
+        //with parameters and without return value
+        function areaofcircle3(radius)
+        {
+            var area
+            const MathPI=3.1415
+            area=Math.PI*radius*radius
+            alert(area)
+        }
+        areaofcircle3(7)
+
+        //without parameters and without return value
+         function areaofcircle4()
+        {
+            var area
+            var radius=2
+            const MathPI=3.1415
+            area=Math.PI*radius*radius
+            alert(area)
+        }
+        areaofcircle4()
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>addition of 3 numbers</title>
+</head>
+<body>
+    <script>
+
+        //with parameters and with return value
+        function addition(n1,n2,n3)
+        {
+            var sum
+            sum=n1+n2+n3
+            return sum
+        }
+        var r1=addition(2,4,6)
+        alert(r1)
+        //without parameters and with return value
+        function addition2()
+        {
+            var n1,n2,n3,sum
+            n1=10
+            n2=20
+            n3=30
+            sum=n1+n2+n3
+            return sum
+        }
+        var r2=addition2()
+        alert(r2)
+        //with parameters and without return value
+         function addition3(n1,n2,n3)
+        {
+            var sum
+            sum=n1+n2+n3
+            alert(sum)
+        }
+        addition3(1,2,3)
+        //without parameters and without return value
+        function addition4()
+        {
+            var n1,n2,n3,sum
+            n1=1
+            n2=3
+            n3=5
+            sum=n1+n2+n3
+            alert(sum)
+        }
+        addition4()
+
+    </script>
+    
+</body>
+</html>

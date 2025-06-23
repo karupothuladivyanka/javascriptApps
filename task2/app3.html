@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>simple interest</title>
+</head>
+<body>
+    <script>
+
+        //with parameters and with return value
+        function simpleinterest(p,t,r)
+        {
+            var si
+            si=(p*t*r)/100
+            return si
+        }
+        var r1=simpleinterest(2,3,4)
+        alert(r1)
+
+        //without parameters and with return value
+        function simpleinterest2()
+        {
+            var p,t,r,si
+            p=10
+            t=20
+            r=30
+            si=(p*t*r)/100
+            return si
+        }
+        var r2=simpleinterest2()
+        alert(r2)
+
+        //with parameters and without return value
+        function simpleinterest3(p,t,r)
+        {
+            var si
+            si=(p*t*r)/100
+            alert(si)
+        }
+        simpleinterest3(2,3,4)
+
+        //without parameters and without return value
+        function simpleinterest4()
+        {
+            var p,t,r,si
+            p=10
+            t=20
+            r=30
+            si=(p*t*r)/100
+            alert(si)
+        }
+        simpleinterest4()
+
+
+
+
+    </script>
+    
+</body>
+</html>

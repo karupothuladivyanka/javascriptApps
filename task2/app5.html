@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>biggest of two numbers</title>
+</head>
+<body>
+    <script>
+
+        //with parameters and with return value
+        function big(n1,n2)
+        {
+            var biggest
+            biggest=n1>n2?n1:n2
+            return biggest
+        }
+        var r1=big(2,3)
+        alert(r1)
+
+        //without parameters and with return value
+        function big2()
+        {
+            var n1,n2,biggest
+            n1=10
+            n2=20
+            biggest=n1>n2?n1:n2
+            return biggest
+        }
+        var r2=big2()
+        alert(r2)
+
+        //with parameters and without return value
+        function big3(n1,n2)
+        {
+            var biggest
+            biggest=n1>n2?n1:n2
+            alert(biggest)
+        }
+        big3(2,1)
+
+         //without parameters and without return value
+        function big4()
+        {
+            var n1,n2,biggest
+            n1=10
+            n2=20
+            biggest=n1>n2?n1:n2
+            alert(biggest)
+        }
+        big4()
+
+    </script>
+    
+</body>
+</html>

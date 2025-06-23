@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>average of 6 numbers</title>
+</head>
+<body>
+    <script>
+
+        //with parameters and with return value
+        function average(n1,n2,n3,n4,n5,n6)
+        {
+            var avg
+            avg=(n1+n2+n3+n4+n5+n6)/6
+            return avg
+        }
+        var r1=average(10,20,30,40,50,60)
+        alert(r1)
+
+        //without parameters and with return value
+        function average2()
+        {
+            var n1,n2,n3,n4,n5,n6,avg
+            n1=1
+            n2=2
+            n3=3
+            n4=4
+            n5=5
+            n6=6
+            avg=(n1+n2+n3+n4+n5+n6)/6
+            return avg
+        }
+        var r2=average2()
+        alert(r2)
+
+        //with parameters and without return value
+        function average3(n1,n2,n3,n4,n5,n6)
+        {
+            var avg
+            avg=(n1+n2+n3+n4+n5+n6)/6
+            alert(avg)
+        }
+        average3(10,20,30,40,50,60)
+
+        //without parameter and without return value
+        function average4()
+        {
+            var n1,n2,n3,n4,n5,n6,avg
+            n1=1
+            n2=2
+            n3=3
+            n4=4
+            n5=5
+            n6=6
+            avg=(n1+n2+n3+n4+n5+n6)/6
+            alert(avg)
+        }
+        average4()
+
+
+
+    </script>
+    
+</body>
+</html>
