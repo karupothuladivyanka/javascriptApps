@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      let employee = { 
+        id: 1,
+        name: { firstname: "Divyanka", lastname: "Karupothula" },
+        salary: 20000,
+        address: {
+          hno: 105,
+          street: 2,
+          city: "Hyd",
+          pin: 500092,
+          state: "telangana",
+          country: "india",
+          location: ["lat", "long"],
+        },
+        nominee: {
+          id:2,  
+          name: "divyanka",
+          relationship: "single",
+          age: 21,
+          dob: "21/12/2003",
+          occupation: "student",
+        },
+
+        accounts: [
+         
+          {
+            id:3,
+            accountNumber: 24315523211,
+            amount: 30000,
+            bankname: "SBI",
+            ifsc: 423514,
+          },
+          {
+            accountNumber: 36271763829,
+            amount: 4000,
+            bankname: "indian",
+            ifsc: 263577,
+          },
+          {
+            accountNumber: 27236521763,
+            amount: 3000,
+            bankname: "hdfc",
+            ifsc: 635726,
+          },
+        ],
+        experience: [
+          { id: 3 },
+          { campanyName: "tcs", desi: "software engineer", ctc: "4LPA" },
+          { campanyName: "wipro", desi: "associate engineer", ctc: "3LPA" },
+          { campanyName: "capgemini", desi: "software engineer", ctc: "3LPA" },
+        ],
+        education: [
+          { board: "JNTUH", degree: "btech", marks: 80, year: 2025 },
+          { board: "JNTUH", degree: "btech", marks: 70, year: 2024 },
+          { board: "JNTUH", degree: "btech", marks: 60, year: 2023 },
+        ],
+      };
+      console.log(employee);
+      let jsonemployee=JSON.stringify(employee);
+      console.log(jsonemployee);
+    </script>
+  </body>
+</html>

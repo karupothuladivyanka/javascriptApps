@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>function inside the object</title>
+</head>
+<body>
+    <script>
+        let simpleInterest=
+        {
+            p:20000,
+            t:1,
+            r:12,
+            showdata: function(){
+                return (this.p*this.t*this.r)/100;
+            }
+        }
+        let result=simpleInterest.showdata();
+        console.log(result);
+    </script>
+</body>
+</html>

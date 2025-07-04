@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>functions inside the object(addition)</title>
+</head>
+<body>
+    <script>
+        let addition=
+        {
+            n1:10,
+            n2:20,
+            showdata: function(){
+                return this.n1+this.n2;
+            }
+        }
+        let res=addition.showdata();
+        console.log(res);
+    </script>
+</body>
+</html>
