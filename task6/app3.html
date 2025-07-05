@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM(innerHTML vs value)</title>
+</head>
+<body>
+    <input type="number" placeholder="enter priciple ammount" id="id1">
+    <input type="number" placeholder="enter time" id="id2">
+    <input type="number" placeholder="enter rate" id="id3">
+    <button onclick="dosi()">submit</button>
+    <span id="output"></span>
+    <script>
+        function dosi() {
+        let p=eval(document.getElementById("id1").value)
+        let t=eval(document.getElementById("id2").value)
+        let r=eval(document.getElementById("id2").value)
+        let result=(p*t*r)/100
+        document.getElementById("output").innerHTML=result
+        }
+    </script>
+</body>
+</html>
